@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        bugVMVersion = "1.2.3"
+        bugVMVersion = "1.2.9"
     }
     repositories {
         jcenter()
@@ -50,7 +50,7 @@ repositories {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = "3.4.1"
+    gradleVersion = "4.7"
     distributionType = Wrapper.DistributionType.ALL
 }
 
@@ -61,15 +61,15 @@ modifyPom {
         url "https://bugvm.com"
 
         scm {
-            url "https://github.com/bugvm/bugvm"
-            connection "scm:git:git://github.com/bugvm/bugvm.git"
-            developerConnection "scm:git:ssh://github.com:bugvm/bugvm.git"
+            url "https://github.com/ibinti/bugvm"
+            connection "scm:git:git://github.com/ibinti/bugvm.git"
+            developerConnection "scm:git:ssh://github.com:ibinti/bugvm.git"
         }
 
         developers {
             developer {
                 id "bugvm"
-                name "We are the BugVM"
+                name "This is BugVM"
                 email "bug@bugvm.com"
                 organization "BugVM"
                 organizationUrl "https://bugvm.com"
